@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(https://wallpapers.org.es/wp-content/uploads/2012/09/Wallpaper-bloc-de-notas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.notas{
+    margin: 0;
+    min-height: 100vh;
+}
+.notas-container{
+    max-width: 1024px;
+    margin: auto;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.notas-title{
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 0 0.250rem white, 0 0 0.5rem white;
+}
+.notas-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.notas-main__container-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.notas-main__container-formulario-label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 0.250rem white, 0 0 0.5rem white;
+}
+.notas-main__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.notas__formulario-textarea{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.notas-main__formulario-submit{
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background-color: blue;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+.notas-main__formulario-submit:hover{
+    background-color: #000094;
+}
+.notas-main__container-lista{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.notas__lista-title{
+    margin: 0 0 2rem;
+    text-shadow: 0 0 0.250rem white, 0 0 0.5rem white;
+}
+.notas-main__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+li{
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.borrar-nota {
+    float: right;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+}
+
+@media (max-width: 854px) {
+    .notas-main{
+        grid-template-columns: 1fr;
+    }
+}

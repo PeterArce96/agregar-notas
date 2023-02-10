@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar-Notas</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+    <div class="notas" id="notas">
+        <div class="notas-container">
+
+            <h1 class="notas-title">Guardar Notas</h1>
+            <main class="notas-main">
+                <div class="notas-main__container-formulario">
+                    <label for="nota-label" class="notas-main__container-formulario-label">Ingrese nota:</label>
+                    <form id="formulario" class="notas-main__formulario">
+                        <label for="nota-label"></label>
+                        <textarea id="nota" class="notas__formulario-textarea" cols="40" rows="6">
+                        </textarea>
+                        <input type="submit" class="notas-main__formulario-submit" value="Agregar Nota">
+                    </form>
+                </div>
+                <div class="notas-main__container-lista">
+                    <h2 class="notas__lista-title">Mis Notas</h2>
+                    <div class="notas-main__lista" id="lista-notas">
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
