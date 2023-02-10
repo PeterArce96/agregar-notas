@@ -63,7 +63,7 @@ function mostrarError(error) {
 
     setTimeout(() => {
         mensajeError.remove();
-    }, 10000);
+    }, 3000);
 }
 
 // Muestra un listado de los notas
